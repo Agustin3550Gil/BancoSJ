@@ -1,20 +1,38 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+<section  class="u-clearfix u-white u-section-1" id="sec-7586">
+  <div class="u-clearfix u-sheet u-valign-top-md u-valign-top-sm u-valign-top-xs u-sheet-1">
+    <img class="u-hidden-lg u-hidden-md u-hidden-sm u-hidden-xs u-image u-image-default u-image-1" src="../../assets/images/banner2.svg" alt="" data-image-width="361" data-image-height="296">
+    <img class="u-hidden-md u-hidden-sm u-hidden-xs u-image u-image-default u-image-2" src="../../assets/images/bann1.svg" alt="" data-image-width="408" data-image-height="637">
+    <div class="u-align-center u-container-style u-custom-color-1 u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-group u-shape-rectangle u-group-1">
+      <div class="u-container-layout u-container-layout-1">
+        <img class="u-expanded-width-xs u-image u-image-default u-image-3" src="../../assets/images/logo1.svg" alt="" data-image-width="295" data-image-height="74">
+        <div class="u-form u-form-1">
+          <form (ngSubmit)="onSubmit()" [formGroup]="formulario" class="u-clearfix u-form-spacing-20 u-form-vertical u-inner-form" style="padding: 10px" source="email" name="form">
+            <div class="u-form-group u-form-name u-label-top">
+              <label for="name-3b9a" class="u-label">USUARIO</label>
+              <input formControlName="user" type="text" id="name-3b9a" name="name" class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-input u-input-rectangle u-input-1" required="">
+            </div>
+            <div class="u-form-email u-form-group u-label-top">
+              <label for="email-3b9a" class="u-label">CONTRASEÑA</label>
+              <input formControlName="clave" type="password" id="email-3b9a" name="email" class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-input u-input-rectangle u-input-2" required="">
+            </div>
+            <div class="u-form-agree u-form-group u-label-top u-form-group-3">
+              <input type="checkbox" id="agree-4e08" name="agree" class="u-agree-checkbox" required="">
+              <label for="agree-4e08" class="u-agree-label u-label">Yo acepto los <a href="https://digital.bancosanjuan.ar/termsAndConditions">Términos y condiciones</a>
+              </label>
+            </div>
+            <div (click)="onSubmit()" class="u-align-center u-form-group u-form-submit u-label-top">
+              <input type="submit" value="submit" class="u-form-control-hidden">
+              <a  class="u-border-2 u-border-custom-color-2 u-btn u-btn-round u-btn-submit u-button-style u-custom-color-2 u-radius-13 u-btn-1">Ingresar<br>
+              </a>
+              
+            </div>
+          </form>
+        </div>
+        <a href="https://www.tiendaclic.com.ar/"><img  class="u-image u-image-contain u-image-default u-preserve-proportions u-image-4" src="../../assets/images/p1.jpg" alt="" data-image-width="174" data-image-height="170"></a>
+        <a href="https://www.bancosanjuan.com/telefonos-utiles"> <img  class="u-image u-image-contain u-image-default u-preserve-proportions u-image-5" src="../../assets/images/p2.jpg" alt="" data-image-width="173" data-image-height="173"></a>
+        <h5 class="u-text u-text-1">Operar con Home Banking implica aceptar terminos y condiciones que ofrece el servicio.</h5>
+      </div>
+    </div>
+    <img class="u-expanded-width-xs u-hidden-md u-hidden-sm u-hidden-xs u-image u-image-default u-image-6" src="../../assets/images/bann2.svg" alt="" data-image-width="408" data-image-height="195">
   </div>
-</ion-content>
+</section>
